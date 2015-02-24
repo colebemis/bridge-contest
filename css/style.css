@@ -73,7 +73,7 @@ header {
   background-size: cover;
 }
 
-header.hero {
+header.hero-container {
   flex: auto;
   background: url(../images/portland.jpg) no-repeat center 40% fixed;
   background-size: cover;
@@ -131,20 +131,21 @@ header h1 {
   color: #fff;
 }
 
-header.hero h1 {
-  width: 400px;
-  font-size: 58px;
-  margin: 0 auto 24px;
-}
-
-header.hero div {
-  margin: 120px 0;
+header.hero-container .hero {
+  margin: 80px 0;
   flex: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+header.hero-container h1 {
+  width: 480px;
+  font-size: 58px;
+  margin: 0 auto 24px;
+}
+
+header .presents,
 header .dateloc {
   margin: 0;
   font-size: 16px;
@@ -152,6 +153,46 @@ header .dateloc {
   letter-spacing: 2px;
   color: #fff;
   z-index: 2;
+  opacity: 0.7;
+}
+
+header .presents {
+  margin: 0 0 24px;
+}
+
+/* Sponsors */
+
+.sponsors {
+  padding: 0 0 24px;
+}
+
+.sponsors h4 {
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+}
+
+.sponsors ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsors li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.sponsors a {
+  opacity: 0.5;
+}
+
+.sponsors a:hover {
+  opacity: 0.7;
 }
 
 /* Content */
@@ -171,6 +212,12 @@ header .dateloc {
   margin: 0 0 48px;
 }
 
+.content .coming-soon {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}
+
 .content .lg-button {
   display: inline-block;
   font: 700 15px "Montserrat", sans-serif;
@@ -188,6 +235,8 @@ header .dateloc {
 .content .lg-button:hover {
   opacity: 0.6;
 }
+
+/* Schedule */
 
 .content .schedule::after {
   content: "";
@@ -258,6 +307,8 @@ header .dateloc {
   border-radius: 4px;
 }
 
+/* Registration */
+
 .content .registration-letter {
   box-sizing: border-box;
   padding: 50px 60px;
@@ -281,11 +332,19 @@ header .dateloc {
   border-bottom: 1px solid rgba(31, 180, 221, 0.25);
 }
 
-.content .coming-soon {
-  font-size: 16px;
-  color: #777;
-  text-align: center;
+/*
+.content .registration-letter ~ .lg-button {
+  width: 49%;
 }
+
+.content .registration-letter ~ .lg-button:first-child {
+  float: left;
+}
+
+.content .registration-letter ~ .lg-button:last-child {
+  float: right;
+}
+*/
 
 /* Footer */
 
