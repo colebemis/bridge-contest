@@ -171,7 +171,7 @@ header .dateloc {
   margin: 0 0 48px;
 }
 
-.content .button {
+.content .lg-button {
   display: inline-block;
   font: 700 15px "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -185,7 +185,7 @@ header .dateloc {
   margin-top: 40px;
 }
 
-.content .button:hover {
+.content .lg-button:hover {
   opacity: 0.6;
 }
 
