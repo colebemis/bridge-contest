@@ -1,0 +1,60 @@
+/* Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebas-neue-400-webfont.eot');
+  src: url('../fonts/bebas-neue-400-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/bebas-neue-400-webfont.woff2') format('woff2'),
+       url('../fonts/bebas-neue-400-webfont.woff') format('woff'),
+       url('../fonts/bebas-neue-400-webfont.ttf') format('truetype'),
+       url('../fonts/bebas-neue-400-webfont.svg#bebas-neue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proxima-nova-400.eot");
+  src: url("../fonts/proxima-nova-400.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/proxima-nova-400.woff") format("woff"),
+       url("../fonts/proxima-nova-400.ttf") format("truetype"),
+       url("../fonts/proxima-nova-400.svg#proxima-nova") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proxima-nova-600.eot");
+  src: url("../fonts/proxima-nova-600.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/proxima-nova-600.woff") format("woff"),
+       url("../fonts/proxima-nova-600.ttf") format("truetype"),
+       url("../fonts/proxima-nova-600.svg#proxima-nova") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Global */
+
+/*
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  font: 400 14px "Proxima Nova", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+*/
