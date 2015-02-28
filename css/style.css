@@ -94,7 +94,7 @@ header.hero-container {
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  background: url(../images/portland-overlay.jpg) no-repeat center 40% fixed;
+  background: url(../images/portland-overlay.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
