@@ -283,6 +283,11 @@ header .presents {
   opacity: 0.6;
 }
 
+.content p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
 /* Schedule */
 
 .content .schedule::after {
