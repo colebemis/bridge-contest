@@ -331,6 +331,35 @@ header .dateloc {
   line-height: 1.4;
 }
 
+.content.temp {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.content.temp p {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+.content.temp li {
+  margin-bottom: 16px;
+}
+
+.content.temp a {
+  border-bottom: 1px solid #ccc;
+}
+
+.content.temp a:hover {
+  color: #1fb4dd;
+  border-bottom: 1px solid rgba(31, 180, 221, 0.25);
+}
+
+.content.temp h3 {
+  margin-top: 36px;
+}
+
 /* Schedule */
 
 .content .schedule::after {
