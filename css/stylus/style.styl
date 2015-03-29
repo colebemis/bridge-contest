@@ -1,0 +1,375 @@
+@import "nib"
+
+/* Variables */
+
+color-accent = #79C758//#54CF6B//#43a4ef//#2FC3D3//#1fb4dd
+
+/* Fonts */
+
+// TODO: Replace @import with <link>
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700)
+
+@font-face
+  font-family "Bebas Neue"
+  src url("../fonts/bebas-neue-400-webfont.eot")
+  src url("../fonts/bebas-neue-400-webfont.eot?#iefix")format("embedded-opentype"), url("../fonts/bebas-neue-400-webfont.woff2")format("woff2"), url("../fonts/bebas-neue-400-webfont.woff")format("woff"), url("../fonts/bebas-neue-400-webfont.ttf")format("truetype"), url("../fonts/bebas-neue-400-webfont.svg#bebas-neue")format("svg")
+  font-weight 400
+  font-style normal
+
+@font-face
+  font-family "Proxima Nova"
+  src url("../fonts/proxima-nova-400.eot")
+  src url("../fonts/proxima-nova-400.eot?#iefix")format("embedded-opentype"), url("../fonts/proxima-nova-400.woff")format("woff"), url("../fonts/proxima-nova-400.ttf")format("truetype"), url("../fonts/proxima-nova-400.svg#proxima-nova")format("svg")
+  font-weight 400
+  font-style normal
+
+@font-face
+  font-family "Proxima Nova"
+  src url("../fonts/proxima-nova-600.eot")
+  src url("../fonts/proxima-nova-600.eot?#iefix")format("embedded-opentype"), url("../fonts/proxima-nova-600.woff")format("woff"), url("../fonts/proxima-nova-600.ttf")format("truetype"), url("../fonts/proxima-nova-600.svg#proxima-nova")format("svg")
+  font-weight 600
+  font-style normal
+
+/* Global */
+
+html
+  height 100%
+
+body
+  min-height 100%
+  margin 0
+  display flex
+  flex-direction column
+  font 400 14px "Proxima Nova", "Arial", sans-serif
+
+a
+  text-decoration none
+  color currentColor
+  transition all 0.3s
+
+ul
+  margin 0
+  padding 0
+  list-style none
+
+/* Header */
+
+header
+  text-align center
+  position relative
+  display flex
+  flex-direction column
+  background url(../images/portland-overlay.jpg) no-repeat center -480px fixed #2a2a2a
+  background-size cover
+
+  &.hero-container
+    flex auto
+    background url(../images/portland-overlay.jpg) no-repeat center center fixed #2a2a2a
+    background-size cover
+
+    .hero
+      flex auto
+      display flex
+      flex-direction column
+      justify-content center
+      margin 80px 0
+
+    h1
+      width 480px
+      margin 24px auto
+      font-size 58px
+
+    .sub
+      margin 0
+
+  .sub
+    margin 0 0 40px
+    font-size 16px
+    text-transform uppercase
+    letter-spacing 2px
+    color #fff
+    opacity 0.7
+
+  nav
+    padding 24px 0
+    border-bottom 1px solid rgba(255,255,255,0.18)
+    font-weight 600
+    text-transform uppercase
+    letter-spacing 1px
+    color #fff
+
+    li
+      display inline-block
+      margin 0 20px
+      padding 2px 0
+
+      a:hover
+        opacity 0.6
+
+    .active
+      border-bottom 2px solid color-accent
+
+      a:hover
+        opacity 1
+        cursor default
+
+  h1
+    margin 40px 0 16px
+    font 400 42px/1.1 "Bebas Neue", sans-serif
+    text-transform uppercase
+    letter-spacing 1px
+    color #fff
+
+/* Sponsors */
+
+.sponsors
+  padding 0 0 24px
+
+  h4
+    margin 0 0 20px
+    text-transform uppercase
+    text-align center
+    letter-spacing 2px
+    font-size 12px
+    color rgba(255,255,255,0.7)
+
+  ul
+    display flex
+    flex-direction row
+    align-items center
+    justify-content center
+
+
+  li
+    display inline-block
+    width 180px
+    padding 0 20px
+
+  a
+    opacity 0.5
+
+    &:hover
+      opacity 0.7
+
+  img
+    width 100%
+//    background rgba(255,0,0,0.5)
+
+/* Content */
+
+.content
+  max-width 880px
+  width 90%
+  margin 0 auto
+  padding 72px 0
+
+  h2
+    font 700 30px/1 "Montserrat", "Arial", sans-serif
+    text-transform uppercase
+    letter-spacing 1px
+    text-align center
+    margin 0 0 48px
+
+  h3
+    font-size 15px
+    font-weight 600
+    text-transform uppercase
+    letter-spacing 1px
+    margin 0
+    padding 24px 0 0
+    color color-accent
+    border-top 2px solid color-accent
+    margin-bottom 40px
+
+  .lg-button
+    display inline-block
+    font 700 15px "Montserrat", sans-serif
+    text-transform uppercase
+    letter-spacing 1px
+    text-align center
+    color #fff
+    background color-accent
+    padding 20px 0
+    border-radius 4px
+    width 100%
+    margin-top 40px
+
+    &:hover
+      opacity 0.6
+
+  .lead
+    font-size 18px
+    color #777
+    line-height 1.6
+    margin-bottom 36px
+
+  .row::after
+    clear both
+
+  .one-third
+    width 33.3%
+    float left
+
+  .two-thirds
+    width 66.7%
+    float right
+
+/* Registration */
+
+.content .registration-letter
+  box-sizing border-box
+  padding 50px 60px
+  border 1px solid #e2e2e2
+  border-radius 4px
+  font-size 16px
+  line-height 1.4
+  color #333
+  box-shadow 0 1px 2px lighten(#000, 90%)
+
+  li
+    margin 16px 0
+
+  a
+    border-bottom 1px solid #ccc
+
+    &:hover
+      color darken(color-accent, 20%)
+      border-bottom 1px solid lighten(color-accent, 50%)
+
+/* Schedule */
+
+.content .schedule
+  &::after
+    content ""
+    display block
+    clear both
+
+  > div
+    box-sizing border-box
+    width 50%
+
+  > div:first-of-type
+    float left
+    padding-right 20px
+
+  > div:last-of-type
+    float right
+    padding-left 20px
+
+  .event
+    font-size 16px
+    line-height 1.5
+    margin 28px 0
+
+    &::after
+      content ""
+      display block
+      clear both
+
+  .time
+    width 23%
+    display block
+    float left
+    color #999
+
+  .description
+    width 77%
+    display block
+    float right
+    color #333
+
+  .note
+    width 100%
+    box-sizing border-box
+    line-height 1.5
+    padding 15px 20px
+    background #f2f2f2
+    color #777
+    border-radius 4px
+
+/* Hotels */
+
+.content .hotels
+  margin-bottom 48px
+
+  li
+    border-bottom 1px solid #e2e2e2
+    padding 16px 0
+    color #777
+
+    &:last-child
+      border-bottom none
+
+    a
+      color #222
+      text-transform uppercase
+      letter-spacing 1px
+      margin-right 12px
+
+      &:hover
+        color darken(color-accent, 20%)
+
+/* Venue */
+
+.content .venue
+  box-sizing border-box
+  padding-right 40px
+
+  h3
+    margin-bottom 30px
+
+  h4
+    font-size 18px
+    font-weight 400
+    line-height 1.5
+    margin 0 0 24px
+
+  p
+    font-size 16px
+    line-height 1.5
+    margin 0
+    color #777
+
+/* Footer */
+
+footer
+  text-align center
+  padding 24px 0
+  color #777
+  line-height 1.6
+  border-top 1px solid #e2e2e2
+
+  #index &
+    background #0A0A0A
+    border-top none
+    color #666
+
+    a
+      border-bottom: 1px solid darken(#666, 50%)
+
+      &:hover
+        color #ccc
+        border-bottom 1px solid darken(#ccc, 50%)
+
+    li::after
+        color darken(#666, 50%)
+
+  a
+    border-bottom: 1px solid lighten(#777, 50%)
+
+    &:hover
+      color #222
+      border-bottom 1px solid lighten(#222, 50%)
+
+  li
+    display inline-block
+
+    &::after
+      content "/"
+      display inline
+      margin 0 10px
+      color lighten(#777, 50%)
+
+    &:last-of-type::after
+      content ""
+      margin 0
