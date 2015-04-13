@@ -90,6 +90,7 @@ header
     color #fff
     opacity 0.7
 
+  // .nav-collapse
   nav
     padding 24px 0
     border-bottom 1px solid rgba(255,255,255,0.18)
@@ -102,6 +103,7 @@ header
       display inline-block
       margin 0 20px
       padding 2px 0
+      width auto
 
       a:hover
         opacity 0.6
@@ -113,12 +115,41 @@ header
         opacity 1
         cursor default
 
+  .nav-toggle
+    text-indent -9999px
+    display block
+    width 24px
+    height 24px
+    background red
+    margin 16px
+
   h1
     margin 40px 0 16px
     font 400 42px/1.1 "Bebas Neue", sans-serif
     text-transform uppercase
     letter-spacing 1px
     color #fff
+
+// @media screen and (max-width: 40em)
+//   header .nav-collapse
+//     padding 0
+//     background #0A0A0A
+//     border-bottom none
+
+//     li
+//       width 100%
+//       display block
+//       margin 0
+//       padding 16px 0
+//       border-bottom 1px solid darken(#777, 50%)
+
+//       &:last-child
+//         border-bottom none
+
+//     .active
+//       border-bottom none
+//       background color-accent
+
 
 /* Sponsors */
 

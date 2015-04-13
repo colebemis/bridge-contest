@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>2015 International Bridge Building Contest</title>
+
+ <!--  <link rel="stylesheet" href="vendor/responsive-nav.css">
+  <script src="vendor/responsive-nav.min.js"></script> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="index">
   <header class="hero-container">
-    <nav>
+    <nav class="nav-collapse">
       <ul>
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="registration.html">Registration</a></li>
@@ -25,11 +28,13 @@
     <div class="sponsors">
       <h4>Our Sponsors</h4>
       <ul>
+        <li><a href="http://www.bremik.com/"><img src="images/sei-logo.png" alt="Bremik Contruction"></a></li>
         <li><a href="http://www.bremik.com/"><img src="images/bremik-logo.png" alt="Bremik Contruction"></a></li>
         <li><a href="http://www.obec.com/"><img src="images/obec-logo.png" alt="OBEC Consulting Engineers"></a></li>
         <li><a href="https://www.omsi.edu/"><img src="images/omsi-logo.png" alt="OMSI"></a></li>
         <li><a href="http://www.vernier.com/"><img src="images/vernier-logo.png" alt="Vernier"></a></li>
         <li><a href="https://www.nwnatural.com/"><img src="images/nw-natural-logo.png" alt="NW Natural"></a></li>
+        <li><a href="https://www.nwnatural.com/"><img src="images/tm-designs-logo.png" alt="NW Natural"></a></li>
       </ul>
     </div>
   </header>
@@ -41,5 +46,19 @@
       <li>Questions? <a href="mailto:mwechter@riverdale.k12.or.us">mwechter@riverdale.k12.or.us</a></li>
     </ul>
   </footer>
+  <script>
+    var nav = responsiveNav(".nav-collapse", {
+              animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+    });
+  </script>
 </body>
 </html>
